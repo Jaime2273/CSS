@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de CSS: Margin, Padding, Border, Width y Height</title>
+    <title>Cuadrado dentro de marcos</title>
     <style>
-        .cuadrado {
-            width: 150px; /* Ancho del cuadrado */
-            height: 150px; /* Altura del cuadrado */
-            padding: 200px; /* Espacio interno entre el contenido y el borde */
-            border: 15px solid black; /* Borde sólido alrededor del cuadrado */
-            margin: 50px; /* Espacio externo alrededor del cuadrado */
-            background-color: lightorange; /* Color de fondo del contenido */
+        /* Estilos para el marco exterior */
+        .marco-externo {
+            width: 300px;  /* Ancho del marco externo */
+            height: 300px; /* Altura del marco externo */
+            padding: 20px; /* Espacio interno entre el contenido y el borde */
+            border: 5px solid blue; /* Borde del marco externo */
+            margin: 20px; /* Espacio externo entre el marco externo y otros elementos */
+            background-color: lightgrey; /* Fondo del marco externo */
         }
-        p {
-            font-family: Arial, sans-serif;
+
+        /* Estilos para el marco interno */
+        .marco-interno {
+            width: 200px;  /* Ancho del marco interno */
+            height: 200px; /* Altura del marco interno */
+            padding: 15px; /* Espacio interno entre el contenido y el borde */
+            border: 4px solid green; /* Borde del marco interno */
+            background-color: white; /* Fondo del marco interno */
+            margin: 0 auto; /* Centrar el marco interno dentro del marco externo */
+        }
+
+        /* Estilos para el cuadrado */
+        .cuadrado {
+            width: 100px;  /* Ancho del cuadrado */
+            height: 100px; /* Altura del cuadrado */
+            padding: 10px; /* Espacio interno entre el contenido y el borde */
+            border: 3px solid red; /* Borde del cuadrado */
+            background-color: lightblue; /* Fondo del cuadrado */
+            margin: 0 auto; /* Centrar el cuadrado dentro del marco interno */
         }
     </style>
 </head>
 <body>
 
-    <h1>Ejemplo de Cuadrado con CSS</h1>
+    <h1>Cuadrado dentro de marcos con CSS</h1>
 
-    <div class="cuadrado"></div>
+    <div class="marco-externo">
+        <div class="marco-interno">
+            <div class="cuadrado"></div>
+        </div>
+    </div>
 
     <p>
-        Este cuadrado tiene las siguientes propiedades de CSS aplicadas:
+        Este ejemplo muestra un cuadrado dentro de dos marcos:
         <ul>
-            <li><strong>Width (Ancho):</strong> El cuadrado tiene un ancho de 200 píxeles.</li>
-            <li><strong>Height (Altura):</strong> La altura es de 200 píxeles.</li>
-            <li><strong>Padding (Relleno):</strong> Se añaden 20 píxeles de espacio interno entre el contenido y el borde del cuadrado.</li>
-            <li><strong>Border (Borde):</strong> El borde es sólido, negro, y tiene un grosor de 5 píxeles.</li>
-            <li><strong>Margin (Margen):</strong> El cuadrado está separado de otros elementos con un margen externo de 30 píxeles.</li>
+            <li><strong>Marco Externo:</strong> Tiene un ancho de 300px, altura de 300px, borde azul de 5px, padding de 20px y un margen externo de 20px.</li>
+            <li><strong>Marco Interno:</strong> Se encuentra dentro del marco externo, con un ancho de 200px, altura de 200px, borde verde de 4px, padding de 15px.</li>
+            <li><strong>Cuadrado:</strong> Está dentro del marco interno, con un ancho y altura de 100px, borde rojo de 3px, padding de 10px, y un fondo azul claro.</li>
         </ul>
     </p>
 
