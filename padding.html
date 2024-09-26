@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadro con Margen, Padding y Border</title>
     <style>
-        /* Marco externo (gris) */
+        /* Cuadro gris (marco exterior) */
         .marco-externo {
-            width: 400px; /* Ancho total incluyendo borde, padding y contenido */
-            height: 250px; /* Altura total */
-            margin: 30px; /* Espacio exterior del marco */
-            padding: 20px; /* Espacio interno entre el borde gris y el borde azul */
-            border: 10px solid grey; /* Borde gris */
-            background-color: white; /* Fondo del marco externo */
+            width: 350px; /* Ancho total del marco externo */
+            height: 250px; /* Altura total del marco externo */
+            margin: 20px; /* Espacio exterior */
+            padding: 20px; /* Espaciado interno */
+            border: 15px solid grey; /* Borde gris */
+            background-color: white; /* Fondo blanco */
         }
 
-        /* Marco interno (azul) */
+        /* Cuadro azul (marco interno) */
         .marco-interno {
-            width: 100%;  /* Ancho completo menos el padding y borde */
-            height: 100%;
-            padding: 20px; /* Espaciado interno (padding) entre el borde azul y el contenido */
+            width: 100%;  /* Usar todo el ancho disponible menos padding */
+            height: 100%; /* Usar toda la altura disponible */
+            padding: 20px; /* Espaciado interno entre el borde azul y el contenido */
             border: 10px solid blue; /* Borde azul */
             background-color: white; /* Fondo blanco */
         }
 
-        /* Cuadro de contenido real (naranja) */
+        /* Cuadro naranja (contenido) */
         .contenido {
-            width: 100%; /* Usar todo el ancho disponible dentro del marco interno */
+            width: 100%; /* Usar todo el ancho disponible dentro del marco azul */
             height: 100%;
-            background-color: orange; /* Color de fondo del contenido real */
+            background-color: orange; /* Fondo naranja para el contenido real */
         }
     </style>
 </head>
@@ -43,11 +43,11 @@
     </div>
 
     <p>
-        Este ejemplo muestra cómo funcionan las propiedades CSS:
+        Este ejemplo muestra cómo se usan las propiedades de CSS:
         <ul>
-            <li><strong>Marco Externo:</strong> Tiene un borde gris de 10px, padding de 20px, y un margen exterior de 30px.</li>
-            <li><strong>Marco Interno:</strong> Está dentro del marco gris, con un borde azul de 10px y padding de 20px.</li>
-            <li><strong>Contenido Real:</strong> Es el área naranja dentro del marco azul, que representa el contenido real del elemento.</li>
+            <li><strong>Marco Externo (gris):</strong> Tiene un borde gris de 15px, padding de 20px, y un margen externo de 20px.</li>
+            <li><strong>Marco Interno (azul):</strong> Tiene un borde azul de 10px, y un padding de 20px que separa el contenido.</li>
+            <li><strong>Contenido Real (naranja):</strong> Es el área central, dentro del marco azul.</li>
         </ul>
     </p>
 
