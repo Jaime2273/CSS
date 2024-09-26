@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Modelo de Caja</title>
+    <title>Cuadro con Margen, Padding y Border</title>
     <style>
-        /* Estilo del marco exterior */
+        /* Marco externo (gris) */
         .marco-externo {
-            width: 400px;
-            height: 300px;
-            border: 10px solid grey; /* Borde del marco exterior */
-            padding: 20px; /* Espaciado interno (padding) */
-            background-color: lightgrey; /* Fondo gris */
+            width: 400px; /* Ancho total incluyendo borde, padding y contenido */
+            height: 250px; /* Altura total */
+            margin: 30px; /* Espacio exterior del marco */
+            padding: 20px; /* Espacio interno entre el borde gris y el borde azul */
+            border: 10px solid grey; /* Borde gris */
+            background-color: white; /* Fondo del marco externo */
         }
 
-        /* Estilo del marco interno */
+        /* Marco interno (azul) */
         .marco-interno {
-            width: 100%;
+            width: 100%;  /* Ancho completo menos el padding y borde */
             height: 100%;
-            border: 10px solid blue; /* Borde del marco interno */
-            padding: 20px; /* Espaciado interno (padding) */
+            padding: 20px; /* Espaciado interno (padding) entre el borde azul y el contenido */
+            border: 10px solid blue; /* Borde azul */
             background-color: white; /* Fondo blanco */
         }
 
-        /* Estilo del contenido real */
+        /* Cuadro de contenido real (naranja) */
         .contenido {
-            width: 100%;
+            width: 100%; /* Usar todo el ancho disponible dentro del marco interno */
             height: 100%;
             background-color: orange; /* Color de fondo del contenido real */
         }
@@ -33,7 +34,7 @@
 </head>
 <body>
 
-    <h1>Modelo de Caja en CSS</h1>
+    <h1>Cuadro con Margen, Padding y Border</h1>
 
     <div class="marco-externo">
         <div class="marco-interno">
@@ -42,11 +43,11 @@
     </div>
 
     <p>
-        Este ejemplo muestra la estructura del modelo de caja en CSS:
+        Este ejemplo muestra cómo funcionan las propiedades CSS:
         <ul>
-            <li><strong>Marco Externo:</strong> Tiene un borde gris de 10px, con un padding (espacio interno) de 20px.</li>
-            <li><strong>Marco Interno:</strong> Tiene un borde azul de 10px y un padding adicional de 20px.</li>
-            <li><strong>Contenido Real:</strong> Es el área naranja que representa el contenido en sí, sin márgenes o bordes adicionales.</li>
+            <li><strong>Marco Externo:</strong> Tiene un borde gris de 10px, padding de 20px, y un margen exterior de 30px.</li>
+            <li><strong>Marco Interno:</strong> Está dentro del marco gris, con un borde azul de 10px y padding de 20px.</li>
+            <li><strong>Contenido Real:</strong> Es el área naranja dentro del marco azul, que representa el contenido real del elemento.</li>
         </ul>
     </p>
 
