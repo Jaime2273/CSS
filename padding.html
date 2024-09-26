@@ -13,15 +13,21 @@
             padding: 20px; /* Espaciado interno */
             border: 15px solid grey; /* Borde gris */
             background-color: white; /* Fondo blanco */
+
+            /* Flexbox para centrar el contenido */
+            display: flex;
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center;    /* Centrar verticalmente */
         }
 
         /* Cuadro azul (marco interno) */
         .marco-interno {
-            width: 70%;  /* Usar todo el ancho disponible menos padding */
-            height: 70%; /* Usar toda la altura disponible */
+            width: 70%;  /* Ancho del marco interno */
+            height: 70%; /* Altura del marco interno */
             padding: 20px; /* Espaciado interno entre el borde azul y el contenido */
             border: 10px solid blue; /* Borde azul */
             background-color: white; /* Fondo blanco */
+            box-sizing: border-box; /* Incluir padding y borde en el tamaño total */
         }
 
         /* Cuadro naranja (contenido) */
