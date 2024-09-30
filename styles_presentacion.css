@@ -16,8 +16,8 @@ body {
     height: 200px; /* Alto de la tarjeta */
     padding: 20px; /* Espacio interior entre el contenido y los bordes */
     margin: 20px; /* Margen externo para separar de los bordes */
-    border: 2px solid #3498db; /* Borde azul con grosor */
-    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid red;
+    border-dotted: 10px; /* Bordes con puntos */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     text-align: center; /* Alinear texto en el centro */
 }
