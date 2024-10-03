@@ -1,0 +1,28 @@
+/* Estilo para el título con la clase "titulo" */
+.titulo {
+    font-size: 2.5em;
+    color: #336699; /* Cambia el color del texto */
+    text-align: center;
+}
+
+/* Estilo para los párrafos con id "destacado" */
+#destacado {
+    background-color: #f0e68c; /* Color de fondo */
+    color: #000080; /* Color de texto */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo general para los párrafos con la clase "contenido" */
+.contenido {
+    color: #333; /* Color del texto */
+    margin: 10px 0; /* Márgenes superior e inferior */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo especial para el párrafo con id "especial" y clase "contenido" */
+#especial.contenido {
+    background-color: #d3d3d3; /* Fondo diferente */
+    border: 2px solid #ff4500; /* Borde alrededor del párrafo */
+    padding: 15px;
+}
