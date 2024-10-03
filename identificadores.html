@@ -8,10 +8,17 @@
 </head>
 <body>
     <h1 id="titulo">Título Principal</h1>
+<ol>
+    <li> Cuándo usar una clase (class): Se utiliza cuando queremos aplicar los mismos estilos a múltiples elementos. Las clases son reutilizables, lo que las hace ideales para aplicar el mismo diseño a varios componentes en la página.</li>
+    <li> Cuándo usar un identificador (id): Los identificadores deben ser únicos y se usan cuando queremos aplicar un estilo específico a un solo elemento en la página. Solo se puede asignar un id a un elemento, por lo que es útil cuando queremos hacer referencia a algo único en el HTML.</li>
+    <li>Uso en HTML y CSS: En HTML, se aplica una clase con el atributo class="nombreDeClase" y un identificador con id="nombreId" En CSS, las clases se referencian con un punto (.) seguido del nombre de la clase (.nombreDeClase), y los identificadores con un hash (#) seguido del nombre del identificador (#nombreId).</li>
+    <li>Diferencia en especificidad: Los id tienen mayor especificidad que las class. Esto significa que si un elemento tiene tanto una clase como un identificador, los estilos del id prevalecerán.</li>
 
-    <p class="texto">Este es el primer párrafo de ejemplo.</p>
-    <p class="texto">Este es el segundo párrafo de ejemplo.</p>
-    <p class="texto">Este es el tercer párrafo de ejemplo.</p>
+</ol>
+    
+    <p class="texto">Usarías una clase para estilizar elementos como varios párrafos con el mismo color de texto, y un id para un botón específico que debe tener un diseño único.</p>
+    <p class="texto">En el HTML, tenemos un h1 con un id="titulo", tres párrafos con la clase texto y un botón con la clase boton y el id="botonEnviar.</p>
+    <p class="texto">En el CSS, se estiliza el título usando el id, los párrafos usando la clase texto, y se aplican estilos combinados al botón usando tanto la clase como el id.</p>
 
     <button class="boton" id="botonEnviar">Enviar</button>
 </body>
