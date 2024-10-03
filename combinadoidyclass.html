@@ -17,5 +17,12 @@
     <p class="contenido">Este es el tercer párrafo con la clase "contenido".</p>
 
     <p id="especial" class="contenido">Este es un párrafo con id "especial" y clase "contenido".</p>
+    <h2>Desafíos adicionales</h2>
+    <ol>
+        <ul>¿Por qué no deberíamos repetir el id en varios elementos?</ul>
+    </ol>
+    <p>El atributo id en HTML debe ser único dentro de una página, ya que sirve para identificar un solo elemento del DOM de manera precisa. Cuando se repite el mismo id en varios elementos, se rompe este principio de unicidad, lo que puede causar problemas en el comportamiento del código, como:</p>
+    <ol><strong>JavaScript:</strong>Si intentas seleccionar un elemento con document.getElementById("destacado"), solo devolverá el primer elemento con ese id, ignorando los demás, lo que puede generar errores de funcionalidad.</ol>
+    <ol><strong>CSS:</strong> Los selectores de id tienen una alta especificidad, y si se repite en varios elementos, es impredecible cómo los navegadores aplicarán los estilos, ya que no están diseñados para manejar esta situación correctamente.</ol>
 </body>
 </html>
