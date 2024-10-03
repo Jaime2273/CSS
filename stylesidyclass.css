@@ -1,7 +1,7 @@
 /* Estilo para el título con la clase "titulo" */
 .titulo {
     font-size: 2.5em;
-    color: 17ff00; /* Cambia el color del texto */
+    color: #00FFFF; /* Cambia el color del texto */
     text-align: center;
 }
 
