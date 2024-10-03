@@ -11,7 +11,6 @@
 
     <p id="destacado">Este es el primer párrafo con id "destacado".</p>
     <p id="destacado">Este es el segundo párrafo con el mismo id "destacado".</p>
-
     <p class="contenido">Este es el primer párrafo con la clase "contenido".</p>
     <p class="contenido">Este es el segundo párrafo con la clase "contenido".</p>
     <p class="contenido">Este es el tercer párrafo con la clase "contenido".</p>
@@ -21,17 +20,21 @@
     <ol>
         <li>¿Por qué no deberíamos repetir el id en varios elementos?</li>
     
-    <p>El atributo id en HTML debe ser único dentro de una página, ya que sirve para identificar un solo elemento del DOM de manera precisa. Cuando se repite el mismo id en varios elementos, se rompe este principio de unicidad, lo que puede causar problemas en el comportamiento del código, como:</p>
-    <p><strong>JavaScript:</strong>Si intentas seleccionar un elemento con document.getElementById("destacado"), solo devolverá el primer elemento con ese id, ignorando los demás, lo que puede generar errores de funcionalidad.</p>
-    <p><strong>CSS:</strong> Los selectores de id tienen una alta especificidad, y si se repite en varios elementos, es impredecible cómo los navegadores aplicarán los estilos, ya que no están diseñados para manejar esta situación correctamente.</p>
+        <p>El atributo id en HTML debe ser único dentro de una página, ya que sirve para identificar un solo elemento del DOM de manera precisa. Cuando se repite el mismo id en varios elementos, se rompe este principio de unicidad, lo que puede causar problemas en el comportamiento del código, como:</p>
+        <p><strong>JavaScript:</strong>Si intentas seleccionar un elemento con document.getElementById("destacado"), solo devolverá el primer elemento con ese id, ignorando los demás, lo que puede generar errores de funcionalidad.</p>
+        <p><strong>CSS:</strong> Los selectores de id tienen una alta especificidad, y si se repite en varios elementos, es impredecible cómo los navegadores aplicarán los estilos, ya que no están diseñados para manejar esta situación correctamente.</p>
 
-    <li>¿Qué tiene más peso, el id o la clase en el mismo elemento?</li>
+        <li>¿Qué tiene más peso, el id o la clase en el mismo elemento?</li>
+        
         <p>En CSS, los selectores tienen diferentes niveles de especificidad. El id tiene más peso que la clase. Esto significa que, si un elemento tiene tanto un id como una clase, los estilos definidos por el id se aplicarán con mayor prioridad sobre los estilos definidos por la clase.
         Por ejemplo, en el párrafo con id="especial" y class="contenido", aunque ambos selectores aplican estilos, los estilos del id tendrán mayor peso. Sin embargo, si defines estilos más específicos (como combinando el id y la clase: #especial.contenido), estos sobrescribirán ambos.</p>
-    <li>Comportamiento en el navegador</li>
+    
+        <li>Comportamiento en el navegador</li>
+        
         <p><strong>Clase contenido:</strong> Aplica color de texto y márgenes a los párrafos.</p>
         <p><strong>Id</strong>strong> especial: Cuando ambos (clase e id) están presentes, el id tiene más peso para estilos como el fondo y el borde.</p>
         <p>Esta es la razón por la que puedes sobrescribir el estilo del párrafo especial combinando tanto el id como la clase en tu CSS.</p>
+        
     </ol>
     
 </body>
